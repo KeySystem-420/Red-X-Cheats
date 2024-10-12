@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red X - Discord Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.11.1/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <style>
+        body {
+            background-color: #1a202c;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .tool-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .download-btn {
+            background-image: linear-gradient(to right, #6b46c1, #b83280);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 9999px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -3px rgba(0, 0, 0, 0.1), 0 6px 10px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky top-0 z-50 px-4 py-2 flex justify-between items-center">
+        <a href="#" class="text-white text-xl font-semibold">Red X Cheats</a>
+        <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-purple-500 transition-colors">Home</a>
+            <a href="#tools" class="text-white hover:text-purple-500 transition-colors">Tools</a>
+        </div>
+    </nav>
+
+    <header class="h-screen flex flex-col justify-center items-center text-white text-center space-y-8">
+        <h1 class="text-6xl font-bold">Red X Cheats</h1>
+        <p class="text-2xl">The Ultimate Cheat Provider</p>
+        <a href="#tools" class="download-btn">Get Started</a>
+    </header>
+
+    <section id="tools" class="container mx-auto py-20">
+        <h2 class="text-4xl font-bold text-white text-center mb-12">Our Tools</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="tool-card p-6 rounded-lg text-white text-center space-y-4">
+                <i class="fas fa-gamepad text-6xl"></i>
+                <h3 class="text-2xl font-semibold">Fortnite</h3>
+                <p>Enhance your Fortnite gaming experience with our tailored Fortnite Cheat Client.</p>
+                <a href="#" class="download-btn">Download</a>
+            </div>
+            <div class="tool-card p-6 rounded-lg text-white text-center space-y-4">
+                <i class="fas fa-dragon text-6xl"></i>
+                <h3 class="text-2xl font-semibold">Apex Legends</h3>
+                <p>Optimize your Apex Legends skill With a Apex Legends Cheat Client.</p>
+                <a href="#" class="download-btn">Download</a>
+            </div>
+            <div class="tool-card p-6 rounded-lg text-white text-center space-y-4">
+                <i class="fas fa-shield-alt text-6xl"></i>
+                <h3 class="text-2xl font-semibold">Rainbow Six Siege</h3>
+                <p>Improve your Rainbow Six Siege strategies and skill With our Rainbow Six Siege Cheat Client.</p>
+                <a href="#" class="download-btn">Download</a>
+            </div>
+            <div class="tool-card p-6 rounded-lg text-white text-center space-y-4">
+                <i class="fas fa-cubes text-6xl"></i>
+                <h3 class="text-2xl font-semibold">Minecraft</h3>
+                <p>Enhance your Minecraft adventures with our custom Minecraft Hacked Client.</p>
+                <a href="#" class="download-btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-white text-center">
+        <h2 class="text-4xl font-bold mb-8">Join Our Discord</h2>
+        <a href="https://discord.gg/d2c2MHk2sA" target="_blank" class="download-btn">Join Now</a>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.tool-card', { duration: 1000, easing: 'ease-in-out', scale: 0.9, viewFactor: 0.1 });
+    </script>
+</body>
+</html>
